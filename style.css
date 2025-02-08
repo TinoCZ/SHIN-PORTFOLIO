@@ -186,30 +186,27 @@ li{
   background-color: #010e2446;
 }
 
+
 .card-container {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
   background-color: #010e2446;
 }
 
-
-
 .card {
-  background: rgb(63,94,251);
-background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+  background: #1d1e20;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   padding: 20px;
   text-align: center;
-  width: 300px;
-  margin: 20px;
-  border-radius: 10px;
-  /* animation: slideRight 1s ease forwards;
-  animation-delay: 30s; */
+  width: 80%; /* Cambiado a 100% para ajustarse al grid */
+  margin: 0; /* Removido el margin para que el gap del grid lo maneje */
+  border-radius: 20px;
+  margin-left: 40px;
 }
 
 .card img {
-  border-radius: 5px;
+  border-radius: 12px;
   margin-bottom: 10px;
   width: 100%;
 }
@@ -230,7 +227,7 @@ background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100
 
 .card a {
   background-color: #0ef;
-  border-radius: 5px;
+  border-radius: 15px;
   color: whitesmoke;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   display: inline-block;
@@ -244,6 +241,9 @@ background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100
   color: black;
   box-shadow: 0 0 20px #0ef;
 }
+
+
+
 
 .me{
   background-color: #07090c;
@@ -514,6 +514,16 @@ p {
 
   .card{
     background: #1d1e20;
+  }
+  .card-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .card{
+    width: 300px;
+    margin: 20px;
   }
 }
   
