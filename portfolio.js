@@ -4,7 +4,7 @@ const fabContainer = document.querySelector('.media-container');
 const fabButton = document.querySelector('.plus');
 const buttons = document.querySelectorAll(".price-plan")
 const form = document.querySelector("form")
-
+const reveals = document.querySelectorAll(".reveal-left, .reveal-right");
 
 hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("active");
@@ -62,3 +62,19 @@ form.addEventListener("submit", async function(e){
   form.reset()
 
 })
+
+
+const observer = new IntersectionObserver((entries)=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      entry.target.classList.add("active");
+    }
+  });
+},{
+  threshold:0.2
+});
+
+reveals.forEach(el=>{
+  el.classList.add("reveal");
+  observer.observe(el);
+});
