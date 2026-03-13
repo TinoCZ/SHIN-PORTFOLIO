@@ -1,0 +1,78 @@
+<!-- <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Botón flotante</title>
+  <style>
+    /* Contenedor flotante */
+    .fab-container {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+    }
+
+    /* Botón principal */
+    .fab {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: #00bcd4; /* cyan */
+      color: white;
+      font-size: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: background 0.3s;
+    }
+
+    .fab:hover {
+      background: #0097a7;
+    }
+
+    /* Botones secundarios */
+    .fab-option {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: #00838f;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      margin-bottom: 10px;
+      opacity: 0;
+      transform: scale(0);
+      transition: all 0.3s ease;
+    }
+
+    /* Estado activo (cuando se despliegan) */
+    .show .fab-option {
+      opacity: 1;
+      transform: scale(1);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="fab-container">
+    <div class="fab-option">A</div>
+    <div class="fab-option">B</div>
+    <div class="fab">+</div>
+  </div>
+
+  <script>
+    const fabContainer = document.querySelector('.fab-container');
+    const fabButton = document.querySelector('.fab');
+
+    fabButton.addEventListener('click', () => {
+      fabContainer.classList.toggle('show');
+    });
+  </script>
+
+</body>
+</html> -->
